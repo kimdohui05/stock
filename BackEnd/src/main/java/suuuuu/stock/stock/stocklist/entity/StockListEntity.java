@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor
-@Table (name = "stocklist")
+@Table(name = "stocklist")
 
 public class StockListEntity {
 
@@ -15,7 +15,7 @@ public class StockListEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column (unique = true,  nullable = false)
+    @Column(unique = true, nullable = false)
     private String stockName;
 
 }

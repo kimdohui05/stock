@@ -16,13 +16,13 @@ public class AccountEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column (nullable = false)
+    @Column(nullable = false)
     private Long balance;
 
-    @Column (unique = true,  nullable = false)
+    @Column(unique = true, nullable = false)
     private String accountNumber;
 
     @ManyToOne
-    @JoinColumn (name = "user_id")
+    @JoinColumn(name = "user_id")
     private UserEntity user;
 }

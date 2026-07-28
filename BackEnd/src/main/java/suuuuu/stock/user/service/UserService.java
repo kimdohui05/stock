@@ -11,7 +11,7 @@ import suuuuu.stock.user.repository.UserRepository;
 public class UserService {
     private final UserRepository userRepository;
 
-    public void register (UserRegisterRequestDto userRegisterRequestDto) {
+    public void register(UserRegisterRequestDto userRegisterRequestDto) {
 
     }
 }

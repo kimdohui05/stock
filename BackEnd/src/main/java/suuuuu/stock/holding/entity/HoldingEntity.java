@@ -1,4 +1,4 @@
-package suuuuu.stock.holding.entity;
+package BackEnd.src.main.java.suuuuu.stock.holding.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -17,13 +17,13 @@ public class HoldingEntity {
     private Long id;
 
     @ManyToOne
-    @JoinColumn (name = "stock_id")
-    private StockListEntity  stockList;
+    @JoinColumn(name = "stock_id")
+    private StockListEntity stockList;
 
     @ManyToOne
-    @JoinColumn (name = "user_id")
+    @JoinColumn(name = "user_id")
     private UserEntity user;
 
-    @Column (nullable = false)
+    @Column(nullable = false)
     private Long quantity;
 }

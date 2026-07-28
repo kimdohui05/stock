@@ -16,7 +16,7 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true,  nullable = false)
+    @Column(unique = true, nullable = false)
     private String userId;
 
     @Column(nullable = false)
@@ -25,6 +25,6 @@ public class UserEntity {
     @Column(nullable = false)
     private String name;
 
-    @Column(unique = true,  nullable = false)
+    @Column(unique = true, nullable = false)
     private String phoneNumber;
 }
