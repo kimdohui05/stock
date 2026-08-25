@@ -1,4 +1,4 @@
-package BackEnd.src.main.java.suuuuu.stock.holding.entity;
+package suuuuu.stock.holding.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
